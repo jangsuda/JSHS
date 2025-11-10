@@ -1,0 +1,302 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-user-select: none !important;
+  -moz-user-select: -moz-none !important;
+  -ms-user-select: none !important;
+  user-select: none !important;
+}
+
+$m-inlign: calc(100vw / 24 * 1);
+$s-p-inline: 120px;
+$border-radius: 4px;
+
+$white: rgba(238, 238, 238, 1);
+$black: rgba(2, 2, 3, 1);
+$lightMode-gray: rgba(196, 196, 196, 1);
+$mid-gray: rgba(178, 178, 178, 1);
+$darkMode-gray: rgba(80, 80, 80, 1);
+$lightMode-red: rgba(255, 26, 26, 1);
+$darkMode-red: rgba(229, 7, 7, 1);
+
+@import url("https://fonts.googleapis.com/css2?family=Asta+Sans:wght@300..800&family=Reenie+Beanie&display=swap");
+
+body {
+  font-family: "Asta Sans", sans-serif;
+  section {
+    max-width: 120rem;
+    min-width: 40rem;
+    margin: auto;
+    padding-inline: $s-p-inline;
+    position: relative;
+    padding-top: 7.5rem;
+    padding-bottom: 3.75rem;
+    h1 {
+      font-size: clamp(1.5rem, 4vw, 2.75rem);
+    }
+    .wrapper {
+      margin: 2.5rem 0 5rem 0;
+      img,
+      video {
+        display: block;
+        width: 100%;
+        height: auto;
+      }
+      hr {
+        height: 0.5rem;
+        opacity: 0;
+      }
+    }
+    p {
+      font-size: clamp(0.75rem, 2vw, 1.625rem);
+      text-align: center;
+    }
+  }
+}
+
+.btn__1 {
+  position: fixed;
+  top: 0;
+  right: -90vw;
+  display: flex;
+  height: 100vh;
+  z-index: 3;
+  transition: right 1.5s ease;
+  .sideBtn {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    right: 0;
+    width: 4.5rem;
+    box-sizing: border-box;
+    padding-top: 1.25rem;
+    &__top {
+      display: flex;
+      height: 12rem;
+      padding-left: 0.25rem;
+      text-align: center;
+      font-size: 2rem;
+      font-weight: 600;
+      justify-content: center;
+      align-items: center;
+      writing-mode: vertical-rl;
+      border-radius: $border-radius 0 0
+        $border-radius;
+      cursor: pointer;
+    }
+    &__mid {
+      width: 100%;
+      height: 4.5rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: none;
+      border-radius: $border-radius 0 0
+        $border-radius;
+      cursor: pointer;
+      svg {
+        width: 60%;
+      }
+    }
+  }
+  .sideBtn__top__container {
+    display: flex;
+    width: 90vw;
+    height: 100vh;
+    flex-direction: column;
+    z-index: 3;
+    overflow-y: hidden;
+    transition: none;
+    &__info:nth-of-type(1) {
+      padding-bottom: 1.5rem;
+    }
+    &__info {
+      margin-inline: $m-inlign;
+      font-size: clamp(1.5rem, 4vw, 2.75rem);
+    }
+    .d-arrow {
+      padding-block: 2vw;
+      font-size: clamp(1.25rem, 2vw, 2.125rem);
+      font-weight: 800;
+      animation: bounceArrow 1s ease-in-out
+        infinite;
+    }
+    button {
+      background-color: transparent;
+      border: none;
+      font-size: clamp(1.5rem, 4vw, 2.75rem);
+    }
+    .copy {
+      display: inline-block;
+      position: relative;
+    }
+    .copy::after {
+      content: "";
+      width: 0;
+      height: 0.25rem;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      margin-bottom: -0.375rem;
+      transition: all 0.75s;
+    }
+    .copy:hover {
+      cursor: pointer;
+    }
+    .copy:hover::after {
+      width: 100%;
+    }
+    &__btm {
+      display: flex;
+      width: 100%;
+      justify-content: center;
+      left: 0;
+      bottom: 0;
+      z-index: 4;
+      p {
+        position: absolute;
+        margin-inline: $m-inlign;
+        bottom: -3.5vw;
+        z-index: 4;
+        font-size: clamp(3rem, 11.5vw, 12.5rem);
+        font-weight: 600;
+      }
+      img {
+        width: 40vw;
+        position: absolute;
+        right: 4vw;
+        bottom: 0;
+        z-index: 3;
+      }
+    }
+  }
+}
+
+body.side-open .btn__1 {
+  right: 0;
+}
+
+@keyframes bounceArrow {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(0.6vw);
+  }
+}
+
+.c__toast {
+  position: absolute;
+  padding: 0.5rem 0.75rem;
+  border-radius: $border-radius;
+  font-size: clamp(0.75rem, 2vw, 1.625rem);
+  white-space: nowrap;
+  animation: fadeInOut 2s forwards;
+}
+
+@keyframes fadeInOut {
+  10% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.theme-light {
+  background-color: $white;
+  color: $black;
+  .sideBtn__mid {
+    background-color: $black;
+    svg path {
+      fill: $white;
+    }
+  }
+  .sideBtn__top {
+    background-color: $black;
+    color: $white;
+  }
+  .sideBtn__top__container {
+    background-color: $black;
+    color: $white;
+    .sideBtn__top__container__info {
+      color: $lightMode-gray;
+      button {
+        color: $lightMode-gray;
+      }
+    }
+    .copy::after {
+      background-color: $lightMode-gray;
+    }
+  }
+  .c__toast {
+    background-color: $white;
+    color: $black;
+  }
+}
+
+.theme-dark {
+  background-color: $black;
+  color: $white;
+  .sideBtn__mid {
+    background-color: $white;
+    svg path {
+      fill: $black;
+    }
+  }
+  .sideBtn__top {
+    background-color: $white;
+    color: $black;
+  }
+  .sideBtn__top__container {
+    background-color: $white;
+    color: $black;
+    .sideBtn__top__container__info {
+      color: $darkMode-gray;
+      button {
+        color: $darkMode-gray;
+      }
+    }
+    .copy::after {
+      background-color: $darkMode-gray;
+    }
+  }
+  .c__toast {
+    background-color: $black;
+    color: $white;
+  }
+}
+
+@media screen and (max-width: 80rem) {
+  body {
+    section {
+      padding-inline: 5rem;
+    }
+  }
+  .btn__1 {
+    .sideBtn {
+      gap: 0.5rem;
+      width: 3.9375rem;
+      &__top {
+        height: 9.75rem;
+        padding-left: 0.25rem;
+        font-size: 1.5rem;
+      }
+      &__mid {
+        width: 100%;
+        height: 3.9375rem;
+      }
+    }
+  }
+}

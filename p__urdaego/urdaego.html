@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0" />
+    <title>Suhyun Jang</title>
+
+    <link
+      rel="stylesheet"
+      href="./style/style.css" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../asset/favicon/apple-touch-icon.png" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../asset/favicon/favicon-32x32.png" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../asset/favicon/favicon-16x16.png" />
+    <link
+      rel="manifest"
+      href="../asset/favicon/site.webmanifest" />
+  </head>
+
+  <body>
+    <section>
+      <h1>어데고&#63;&#33;</h1>
+      <div class="wrapper">
+        <img src="./asset/0.png" alt="" />
+        <img src="./asset/1.png" alt="" />
+        <img src="./asset/2.png" alt="" />
+        <img src="./asset/3.png" alt="" />
+        <img src="./asset/4.png" alt="" />
+        <img src="./asset/5.png" alt="" />
+        <img src="./asset/6.png" alt="" />
+        <img src="./asset/7.png" alt="" />
+        <video muted autoplay loop>
+          <source
+            src="./asset/8.mp4"
+            type="video/mp4" />
+          />
+        </video>
+        <img src="./asset/9.png" alt="" />
+        <img src="./asset/10.png" alt="" />
+        <img src="./asset/11.png" alt="" />
+        <img src="./asset/12.png" alt="" />
+        <img src="./asset/13.png" alt="" />
+        <img src="./asset/14.png" alt="" />
+      </div>
+      <p>
+        Suhyun Jang's Web Portfolio
+        <br />
+        &copy;JSH. All Rights Reserved.
+      </p>
+    </section>
+
+    <div class="btn__1">
+      <div class="sideBtn">
+        <div
+          class="sideBtn__top"
+          id="sideBtn__top"
+          onclick="toggleNav()"
+          role="button"
+          tabindex="0"
+          aria-label="Toggle contact panel"
+          aria-expanded="false"
+          aria-controls="contact-panel">
+          CONTACT
+        </div>
+        <button
+          id="sideBtn__mid"
+          class="sideBtn__mid"
+          aria-label="Toggle theme">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24">
+            <path
+              d="M12 21.9967C6.47715 21.9967 2 17.5196 2 11.9967C2 6.47386 6.47715 1.9967 12 1.9967C17.5228 1.9967 22 6.47386 22 11.9967C22 17.5196 17.5228 21.9967 12 21.9967ZM12 19.9967C16.4183 19.9967 20 16.415 20 11.9967C20 7.57843 16.4183 3.9967 12 3.9967C7.58172 3.9967 4 7.57843 4 11.9967C4 16.415 7.58172 19.9967 12 19.9967ZM12 17.9967V5.9967C15.3137 5.9967 18 8.683 18 11.9967C18 15.3104 15.3137 17.9967 12 17.9967Z" />
+          </svg>
+        </button>
+      </div>
+      <div
+        id="contact-panel"
+        class="sideBtn__top__container"
+        aria-label="Contact via email or phone">
+        <div
+          class="sideBtn__top__container__info">
+          <p class="d-arrow" aria-hidden="true">
+            &darr; &darr; &darr;
+          </p>
+          <p>Email</p>
+          <button
+            class="copy"
+            aria-label="Copy email address">
+            tngusgjqm@gmail.com
+          </button>
+        </div>
+        <div
+          class="sideBtn__top__container__info"
+          aria-label="Phone number">
+          <p class="d-arrow" aria-hidden="true">
+            &darr; &darr;
+          </p>
+          <p>Tel.</p>
+          <button
+            class="copy"
+            aria-label="Copy phone number">
+            &#43;82 1033588068
+          </button>
+        </div>
+        <div
+          class="sideBtn__top__container__btm"
+          aria-hidden="true">
+          <p>SUHYUN JANG</p>
+          <img
+            class="theme-img"
+            src="../asset/ae-red.png"
+            alt="" />
+        </div>
+      </div>
+    </div>
+    <div
+      id="c__toast"
+      class="c__toast"
+      role="status"
+      aria-live="polite"></div>
+  </body>
+  <script src="../p-script.js"></script>
+</html>

@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0" />
+    <title>Suhyun Jang</title>
+
+    <link
+      rel="stylesheet"
+      href="./style/style.css" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./asset/favicon/apple-touch-icon.png" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./asset/favicon/favicon-32x32.png" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./asset/favicon/favicon-16x16.png" />
+    <link
+      rel="manifest"
+      href="./asset/favicon/site.webmanifest" />
+  </head>
+
+  <body>
+    <section class="s1">
+      <div class="s__header__info">
+        <h1 class="s__header__info__title">
+          INFO.
+        </h1>
+        <div class="s__header__info__title__text">
+          <h2>Suhyun Jang &#47; 장수현</h2>
+          <p>
+            Hello, I’m Suhyun Jang, a designer who
+            architects the True North of
+            experience and remains attuned to
+            subtle shifts without losing the axis
+            of sensibility.
+          </p>
+          <p>
+            안녕하세요. 경험의 북극점을 설계하며
+            미세한 흔들림 속에서도 감각의 축을
+            잃지 않는 디자이너가 되고 싶은
+            장수현입니다.
+          </p>
+        </div>
+      </div>
+      <div
+        class="s1__arrow__line"
+        aria-hidden="true"></div>
+      <div
+        class="s1__arrow__head"
+        aria-hidden="true"></div>
+      <div class="s1__cmps" aria-hidden="true">
+        <div class="s1__cmps__cmp">
+          <img
+            src="./asset/l-plane.png"
+            class="bg"
+            alt="" />
+          <img
+            src="./asset/l-plane-needle.png"
+            class="needle"
+            id="n1"
+            alt="" />
+        </div>
+        <div class="s1__cmps__cmp">
+          <img
+            src="./asset/l-solid.png"
+            class="bg"
+            alt="" />
+          <img
+            src="./asset/l-solid-needle.png"
+            class="needle"
+            id="n2"
+            alt="" />
+        </div>
+        <div
+          class="s1__cmps__cmp"
+          aria-hidden="true">
+          <img
+            src="./asset/l-plane.png"
+            class="bg"
+            alt="" />
+          <img
+            src="./asset/l-plane-needle.png"
+            class="needle"
+            id="n3"
+            alt="" />
+        </div>
+      </div>
+    </section>
+    <hr />
+    <section class="s2">
+      <div class="s2__header">
+        <div class="s__header__info">
+          <h1 class="s__header__info__title">
+            PROJECTS.
+          </h1>
+        </div>
+        <div
+          id="BtnContainer"
+          role="tablist"
+          aria-label="Select project category">
+          <button
+            class="btn active"
+            data-filter="all"
+            role="tab"
+            aria-pressed="true"
+            tabindex="0"
+            aria-label="All project categories">
+            ALL
+          </button>
+          <button
+            class="btn"
+            data-filter="uxui"
+            role="tab"
+            aria-pressed="false"
+            tabindex="-1"
+            aria-label="UXUI project category">
+            UXUI
+          </button>
+          <button
+            class="btn"
+            data-filter="brand"
+            role="tab"
+            aria-pressed="false"
+            tabindex="-1"
+            aria-label="Brand project category">
+            BRAND
+          </button>
+          <button
+            class="btn"
+            data-filter="etc"
+            role="tab"
+            aria-pressed="false"
+            tabindex="-1"
+            aria-label="Other project category">
+            ETC
+          </button>
+        </div>
+      </div>
+
+      <div
+        id="projects"
+        class="projects"
+        aria-label="Projects">
+        <article class="projects__list">
+          <div class="projects__list__pre">
+            <img
+              src="./asset/projects/thb-urdaego.png"
+              alt="urdaego project: preview" />
+          </div>
+          <a
+            href="./p__urdaego/urdaego.html"
+            aria-labelledby="proj3-title proj3-date">
+            <div
+              class="filterDiv uxui"
+              role="group">
+              <div class="projects__list__info">
+                <p
+                  id="proj3-date"
+                  class="projects__list__info__date">
+                  2024&#8211;2025
+                </p>
+                <p
+                  id="proj3-title"
+                  class="projects__list__info__name">
+                  어데고&#63;&#33;
+                </p>
+                <div
+                  class="projects__list__info__detail">
+                  <p>UXUI</p>
+                  <p>
+                    IOS &#47; Includes Redesign
+                  </p>
+                </div>
+              </div>
+            </div>
+          </a>
+        </article>
+
+        <article class="projects__list">
+          <div class="projects__list__pre">
+            <img
+              src="./asset/projects/thb-hirevisa.png"
+              alt="hire visa plus project: preview" />
+          </div>
+          <a
+            href="./p__hirevisa/hirevisaplus.html"
+            aria-labelledby="proj2-title proj2-date">
+            <div
+              class="filterDiv uxui brand"
+              role="group">
+              <div class="projects__list__info">
+                <p
+                  id="proj2-date"
+                  class="projects__list__info__date">
+                  2024
+                </p>
+                <p
+                  id="proj1-title"
+                  class="projects__list__info__name">
+                  Hire Visa&#43;
+                </p>
+                <div
+                  class="projects__list__info__detail">
+                  <p>UXUI</p>
+                  <p>
+                    Project Improvement Proposal
+                  </p>
+                </div>
+              </div>
+            </div>
+          </a>
+        </article>
+
+        <article class="projects__list">
+          <div class="projects__list__pre">
+            <img
+              src="./asset/projects/thb-connectx.png"
+              alt="urdaego project: preview" />
+          </div>
+          <a
+            href="./p__connectx/connectx.html"
+            aria-labelledby="proj1-title proj1-date">
+            <div
+              class="filterDiv uxui"
+              role="group">
+              <div class="projects__list__info">
+                <p
+                  id="proj1-date"
+                  class="projects__list__info__date">
+                  2023&#8211;2024
+                </p>
+                <p
+                  id="proj1-title"
+                  class="projects__list__info__name">
+                  CONNECT X
+                </p>
+                <div
+                  class="projects__list__info__detail">
+                  <p>UXUI &#47; BRAND</p>
+                  <p>Web-based BX Design</p>
+                </div>
+              </div>
+            </div>
+          </a>
+        </article>
+      </div>
+    </section>
+
+    <hr />
+    <section class="s3">
+      <div class="arrow-grid">
+        <div class="arrow">→</div>
+        <div class="arrow">→</div>
+        <div class="arrow">→</div>
+        <div class="arrow">→</div>
+        <div class="arrow">→</div>
+
+        <div class="arrow">→</div>
+        <div class="arrow">→</div>
+        <div class="arrow">→</div>
+        <div class="arrow">→</div>
+        <div class="arrow">→</div>
+
+        <div class="arrow">→</div>
+        <div class="arrow">→</div>
+        <div class="arrow">→</div>
+        <div class="arrow">→</div>
+        <div class="arrow">→</div>
+      </div>
+
+      <div class="cross-grid">
+        <div class="cross">&#43;</div>
+        <div class="cross">&#43;</div>
+        <div class="cross">&#43;</div>
+        <div class="cross">&#43;</div>
+
+        <div class="cross">&#43;</div>
+        <div class="cross">&#43;</div>
+        <div class="cross">&#43;</div>
+        <div class="cross">&#43;</div>
+      </div>
+    </section>
+
+    <div class="btn__1">
+      <div class="sideBtn">
+        <div
+          class="sideBtn__top"
+          id="sideBtn__top"
+          onclick="toggleNav()"
+          role="button"
+          tabindex="0"
+          aria-label="Toggle contact panel"
+          aria-expanded="false"
+          aria-controls="contact-panel">
+          CONTACT
+        </div>
+        <button
+          id="sideBtn__mid"
+          class="sideBtn__mid"
+          aria-label="Toggle theme">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24">
+            <path
+              d="M12 21.9967C6.47715 21.9967 2 17.5196 2 11.9967C2 6.47386 6.47715 1.9967 12 1.9967C17.5228 1.9967 22 6.47386 22 11.9967C22 17.5196 17.5228 21.9967 12 21.9967ZM12 19.9967C16.4183 19.9967 20 16.415 20 11.9967C20 7.57843 16.4183 3.9967 12 3.9967C7.58172 3.9967 4 7.57843 4 11.9967C4 16.415 7.58172 19.9967 12 19.9967ZM12 17.9967V5.9967C15.3137 5.9967 18 8.683 18 11.9967C18 15.3104 15.3137 17.9967 12 17.9967Z" />
+          </svg>
+        </button>
+      </div>
+      <div
+        id="contact-panel"
+        class="sideBtn__top__container"
+        aria-label="Contact via email or phone">
+        <div
+          class="sideBtn__top__container__info">
+          <p class="d-arrow" aria-hidden="true">
+            &darr; &darr; &darr;
+          </p>
+          <p>Email</p>
+          <button
+            class="copy"
+            aria-label="Copy email address">
+            tngusgjqm@gmail.com
+          </button>
+        </div>
+        <div
+          class="sideBtn__top__container__info"
+          aria-label="Phone number">
+          <p class="d-arrow" aria-hidden="true">
+            &darr; &darr;
+          </p>
+          <p>Tel.</p>
+          <button
+            class="copy"
+            aria-label="Copy phone number">
+            &#43;82 1033588068
+          </button>
+        </div>
+        <div
+          class="sideBtn__top__container__btm"
+          aria-hidden="true">
+          <p>SUHYUN JANG</p>
+          <img
+            class="theme-img"
+            src="../asset/ae-red.png"
+            alt="" />
+        </div>
+      </div>
+    </div>
+    <div
+      id="c__toast"
+      class="c__toast"
+      role="status"
+      aria-live="polite"></div>
+  </body>
+  <script src="./script.js"></script>
+</html>
